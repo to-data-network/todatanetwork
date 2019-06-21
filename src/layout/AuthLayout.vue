@@ -5,7 +5,8 @@
                   containerClasses="px-4 container"
                   expand>
             <router-link slot="brand" class="navbar-brand" to="/">
-                <img src="img/brand/white.png"/>
+            <!-- LOGOTIPO -->
+                 <!--  <img src="img/brand/white.png"/> -->
             </router-link>
 
             <template v-slot="{closeMenu}">
@@ -39,21 +40,16 @@
                     <li class="nav-item">
                         <router-link class="nav-link nav-link-icon" to="/register">
                             <i class="ni ni-circle-08"></i>
-                            <span class="nav-link-inner--text">Register</span>
+                            <span class="nav-link-inner--text">Registrarse</span>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link nav-link-icon" to="/login">
                             <i class="ni ni-key-25"></i>
-                            <span class="nav-link-inner--text">Login</span>
+                            <span class="nav-link-inner--text">Iniciar Sesión </span>
                         </router-link>
                     </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link nav-link-icon" to="/profile">
-                            <i class="ni ni-single-02"></i>
-                            <span class="nav-link-inner--text">Profile</span>
-                        </router-link>
-                    </li>
+                    
                 </ul>
             </template>
         </base-nav>
@@ -63,9 +59,8 @@
                 <div class="header-body text-center mb-7">
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-6">
-                            <h1 class="text-white">Welcome!</h1>
-                            <p class="text-lead text-white">Use these awesome forms to login or create new account in
-                                your project for free.</p>
+                            <h1 class="text-white">¡Te damos la bienvenida!</h1>
+                            <p class="text-lead text-white">TO data network.</p>
                         </div>
                     </div>
                 </div>
@@ -88,25 +83,24 @@
                 <div class="row align-items-center justify-content-xl-between">
                     <div class="col-xl-6">
                         <div class="copyright text-center text-xl-left text-muted">
-                            &copy; {{year}} <a href="https://www.creative-tim.com" class="font-weight-bold ml-1"
-                                               target="_blank">Creative Tim</a>
+                            &copy; {{year}} <a href="https://github.com/to-data-network/todatanetwork" class="font-weight-bold ml-1"
+                                               target="_blank">TO data network</a>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <ul class="nav nav-footer justify-content-center justify-content-xl-end">
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                                <a href="https://tenkuru.com" class="nav-link" target="_blank">Tenkuru</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About
-                                    Us</a>
+                                <a href="https://github.com/to-data-network/todatanetwork" class="nav-link" target="_blank">Sobre nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                                <a href="https://unal.edu.co" class="nav-link" target="_blank">Universidad Nacional de Colombia</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md"
-                                   class="nav-link" target="_blank">MIT License</a>
+                                <a href="http://www.hun.edu.co/"
+                                   class="nav-link" target="_blank">HUN</a>
                             </li>
                         </ul>
                     </div>

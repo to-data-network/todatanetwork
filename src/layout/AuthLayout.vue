@@ -1,5 +1,5 @@
 <template>
-    <div class="main-content bg-default">
+    <div class="daut main-content bg-default">
         <!-- Navbar -->
         <base-nav class="navbar-top navbar-horizontal navbar-dark"
                   containerClasses="px-4 container"
@@ -7,6 +7,7 @@
             <router-link slot="brand" class="navbar-brand" to="/">
             <!-- LOGOTIPO -->
                  <!--  <img src="img/brand/white.png"/> -->
+                 <h2>Hun</h2>
             </router-link>
 
             <template v-slot="{closeMenu}">
@@ -32,10 +33,7 @@
                 <!-- Navbar items -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <router-link class="nav-link nav-link-icon" to="/">
-                            <i class="ni ni-planet"></i>
-                            <span class="nav-link-inner--text">Dashboard</span>
-                        </router-link>
+                        
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link nav-link-icon" to="/register">
@@ -54,7 +52,7 @@
             </template>
         </base-nav>
         <!-- Header -->
-        <div class="header bg-gradient-success py-7 py-lg-8">
+        <div class="header bg-gradient py-7 py-lg-8">
             <div class="container">
                 <div class="header-body text-center mb-7">
                     <div class="row justify-content-center">
@@ -125,5 +123,10 @@
     }
   }
 </script>
-<style>
+<style scoped>
+
+.bg-gradient {
+	background: linear-gradient(87deg, #2dc9ce 0, #2dcecc 100%) !important;
+}
+
 </style>

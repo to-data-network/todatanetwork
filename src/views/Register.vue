@@ -14,7 +14,11 @@
                                     addon-left-icon="ni ni-hat-3"
                                     v-model="model.name">
                         </base-input>
-
+                        <base-input class="input-group-alternative mb-3"
+                                        placeholder="Cedula"
+                                        addon-left-icon="ni ni-badge"
+                                        v-model="model.cedula">
+                            </base-input>
                         <base-input class="input-group-alternative mb-3"
                                     placeholder="Email"
                                     addon-left-icon="ni ni-email-83"
@@ -39,9 +43,11 @@
                                 </base-checkbox>
                             </div>
                         </div>
-                        <div class="text-center">
+                         <div class="text-center">
+                                <router-link class="nav-link nav-link-icon" to="/dashboard">                            
                             <base-button type="primary" class="my-4">Crear cuenta</base-button>
-                        </div>
+                        </router-link>
+                         </div>
                     </form>
                 </div>
             </div>

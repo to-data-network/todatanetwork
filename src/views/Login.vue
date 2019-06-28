@@ -24,8 +24,12 @@
                             <base-checkbox class="custom-control-alternative">
                                 <span class="text-muted">Recuerdame</span>
                             </base-checkbox>
+                            
                             <div class="text-center">
-                                <base-button type="primary" class="my-4">Iniciar sesión</base-button>
+                                <router-link class="nav-link nav-link-icon" to="/dashboard">                            
+                            <base-button type="primary" class="my-4">Iniciar sesión</base-button>
+                        </router-link>
+                                
                             </div>
                         </form>
                     </div>

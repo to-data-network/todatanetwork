@@ -14,13 +14,35 @@
             path: '/agenda'
           }"
         />
+        <base-dropdown>
         
+    <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-zoom-split-in text-blue" :link="{ path: '/profile'}" >
+                Resumen Paciente
+    </base-button>     
+            <sidebar-item :link="{name: 'Resumen paciente', icon: 'ni ni-zoom-split-in text-info', path: '/profile'}"/>
+            <sidebar-item :link="{name: 'Progreso FIM', icon: 'ni ni-controller text-info', path: '/fim'}"/>
+            <sidebar-item :link="{name: 'Progreso por actividades', icon: 'ni ni-html5 text-info', path: '/progresoporactividades'}"/>          
+  </base-dropdown>
         
         <sidebar-item :link="{name: 'Elegir paciente', icon: 'ni ni-single-02 text-blue', path: '/icons'}"/>
-        <sidebar-item :link="{name: 'Resumen paciente', icon: 'ni ni-zoom-split-in text-blue', path: '/profile'}"/>
-        <sidebar-item :link="{name: 'Notas', icon: 'ni ni ni-single-copy-04 text-info', path: '/tables'}"/>
-        <sidebar-item :link="{name: 'Estadisticas', icon: 'ni ni-chart-pie-35 text-info', path: '/login'}"/>
-
+        <base-dropdown>
+         <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni ni-single-copy-04 text-blue" :link="{ path: '/profile'}" >
+                Notas      
+    </base-button>        
+            <sidebar-item :link="{name: 'Historia Ocupacional', icon: 'ni ni-zoom-split-in text-info', path: '/historiaocupacional'}"/>
+            <sidebar-item :link="{name: 'Listado de intereses', icon: 'ni ni-controller text-info', path: '/listadodeintereses'}"/>          
+            <sidebar-item :link="{name: 'Notas de evolución', icon: 'ni ni-controller text-info', path: '/notasevolucion'}"/>          
+            <sidebar-item :link="{name: 'Nota de finalización', icon: 'ni ni-controller text-info', path: '/notafinalizacion'}"/>  
+  </base-dropdown>
+  <base-dropdown>
+         <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-chart-pie-35 text-blue" :link="{ path: '/profile'}" >
+                Estadísticas     
+    </base-button>        
+            <sidebar-item :link="{name: 'Datos Basicos', icon: 'ni ni-zoom-split-in text-info', path: '/historiaocupacional'}"/>
+            <sidebar-item :link="{name: 'Procedencia', icon: 'ni ni-controller text-info', path: '/listadodeintereses'}"/>          
+            <sidebar-item :link="{name: 'Eficiencia FIM', icon: 'ni ni-controller text-info', path: '/notasevolucion'}"/>          
+            <sidebar-item :link="{name: 'Ingreso', icon: 'ni ni-controller text-info', path: '/notafinalizacion'}"/>  
+  </base-dropdown>
       </template>
     </side-bar>
     <div class="main-content" :data="sidebarBackground">
@@ -37,15 +59,18 @@
   </div>
 </template>
 <script>
-  import DashboardNavbar from './DashboardNavbar.vue';
-  import ContentFooter from './ContentFooter.vue';
+
+  import DashboardNavbar from './DashboardNavbar.vue';  
   import { FadeTransition } from 'vue2-transitions';
+
+
+
   export default {
     components: {
       DashboardNavbar,
-      ContentFooter,
-      FadeTransition
-    },
+      
+      FadeTransition, 
+        },
     data() {
       return {
         sidebarBackground: 'vue' //vue|blue|orange|green|red|primary
@@ -60,5 +85,16 @@
     }
   };
 </script>
-<style lang="scss">
+<style scoped>
+  .btn-secondary {
+	  color: rgba(0, 0, 0, 0.5);
+   background-color: inherit;
+	font-weight: inherit;
+	 box-shadow: 0 4px 6px rgba(255, 255, 255, 0.11), 0 1px 3px rgba(255, 255, 255, 0.08); 
+   text-align: inherit;
+   min-width: 2.25rem;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0, 0, 0, 0.5);
+}
 </style>

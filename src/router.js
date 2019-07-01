@@ -7,6 +7,8 @@ Vue.use(Router)
 
 export default new Router({
   linkExactActiveClass: 'active',
+  /* mode: 'history'
+  base: process.env.BASE_URL, */
   routes: [
     {
       path: '/',
@@ -57,6 +59,11 @@ export default new Router({
           path: '/tables',
           name: 'tables',
           component: () => import(/* webpackChunkName: "demo" */ './views/Tables.vue')
+        },
+        {
+          path: '/agenda',
+          name: 'agenda',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Agenda.vue')
         }
       ]
     }

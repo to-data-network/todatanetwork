@@ -22,11 +22,11 @@
                   tbody-classes="list"
                   :data="tableData">
         <template slot="columns">
-          <th>Project</th>
-          <th>Budget</th>
-          <th>Status</th>
-          <th>Users</th>
-          <th>Completion</th>
+          <th>Tipo</th>
+          <th>Costo</th>
+          <th>Estado</th>
+          <th>Usuarios</th>
+          <th>Completado</th>
           <th></th>
         </template>
 
@@ -101,7 +101,7 @@
 
     <div class="card-footer d-flex justify-content-end"
          :class="type === 'dark' ? 'bg-transparent': ''">
-      <base-pagination total="30"></base-pagination>
+      <base-pagination total="20"></base-pagination>
     </div>
 
   </div>
@@ -120,7 +120,7 @@
         tableData: [
           {
             img: 'img/theme/bootstrap.jpg',
-            title: 'Argon Design System',
+            title: 'Argon',
             budget: '$2500 USD',
             status: 'pending',
             statusType: 'warning',
@@ -128,7 +128,7 @@
           },
           {
             img: 'img/theme/angular.jpg',
-            title: 'Angular Now UI Kit PRO',
+            title: 'Angular ',
             budget: '$1800 USD',
             status: 'completed',
             statusType: 'success',
@@ -144,7 +144,7 @@
           },
           {
             img: 'img/theme/react.jpg',
-            title: 'React Material Dashboard',
+            title: 'React',
             budget: '$4400 USD',
             status: 'on schedule',
             statusType: 'info',
@@ -152,7 +152,15 @@
           },
           {
             img: 'img/theme/vue.jpg',
-            title: 'Vue Paper UI Kit PRO',
+            title: 'Vue ',
+            budget: '$2200 USD',
+            status: 'completed',
+            statusType: 'success',
+            completion: 100
+          },
+          {
+            img: 'img/theme/vue.jpg',
+            title: 'Vue js ',
             budget: '$2200 USD',
             status: 'completed',
             statusType: 'success',

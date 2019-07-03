@@ -16,21 +16,21 @@
         />
         <base-dropdown>
         
-    <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-zoom-split-in text-blue" :link="{ path: '/profile'}" >
+    <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-zoom-split-in text-blue" :link="{ path: '/resumen'}" >
                 Resumen Paciente
     </base-button>     
             <sidebar-item :link="{name: 'Resumen paciente', icon: 'ni ni-zoom-split-in text-info', path: '/profile'}"/>
-            <sidebar-item :link="{name: 'Progreso FIM', icon: 'ni ni-controller text-info', path: '/fim'}"/>
-            <sidebar-item :link="{name: 'Progreso por actividades', icon: 'ni ni-html5 text-info', path: '/progresoporactividades'}"/>          
+            <sidebar-item :link="{name: 'Progreso FIM', icon: 'ni ni-controller text-info', path: '/progresofim'}"/>
+            <sidebar-item :link="{name: 'Progreso por actividades', icon: 'ni ni-html5 text-info', path: '/progresoactividades'}"/>          
   </base-dropdown>
         
-        <sidebar-item :link="{name: 'Elegir paciente', icon: 'ni ni-single-02 text-blue', path: '/icons'}"/>
+        <sidebar-item :link="{name: 'Elegir paciente', icon: 'ni ni-single-02 text-blue', path: '/paciente'}"/>
         <base-dropdown>
          <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni ni-single-copy-04 text-blue" :link="{ path: '/profile'}" >
                 Notas      
     </base-button>        
             <sidebar-item :link="{name: 'Historia Ocupacional', icon: 'ni ni-zoom-split-in text-info', path: '/historiaocupacional'}"/>
-            <sidebar-item :link="{name: 'Listado de intereses', icon: 'ni ni-controller text-info', path: '/listadodeintereses'}"/>          
+            <sidebar-item :link="{name: 'Listado de intereses', icon: 'ni ni-controller text-info', path: '/listadointereses'}"/>          
             <sidebar-item :link="{name: 'Notas de evolución', icon: 'ni ni-controller text-info', path: '/notasevolucion'}"/>          
             <sidebar-item :link="{name: 'Nota de finalización', icon: 'ni ni-controller text-info', path: '/notafinalizacion'}"/>  
   </base-dropdown>
@@ -38,12 +38,12 @@
          <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-chart-pie-35 text-blue" :link="{ path: '/profile'}" >
                 Estadísticas     
     </base-button>        
-            <sidebar-item :link="{name: 'Datos Basicos', icon: 'ni ni-zoom-split-in text-info', path: '/historiaocupacional'}"/>
-            <sidebar-item :link="{name: 'Procedencia', icon: 'ni ni-controller text-info', path: '/listadodeintereses'}"/>          
-            <sidebar-item :link="{name: 'Eficiencia FIM', icon: 'ni ni-controller text-info', path: '/notasevolucion'}"/>          
+            <sidebar-item :link="{name: 'Datos Basicos', icon: 'ni ni-zoom-split-in text-info', path: '/estadisticas'}"/>
+            <sidebar-item :link="{name: 'Procedencia', icon: 'ni ni-controller text-info', path: '/procedencia'}"/>          
+            <sidebar-item :link="{name: 'Eficiencia FIM', icon: 'ni ni-controller text-info', path: '/eficienciafim'}"/>          
             <sidebar-item :link="{name: 'Ingreso', icon: 'ni ni-controller text-info', path: '/notafinalizacion'}"/>  
   </base-dropdown>
-        <sidebar-item :link="{name: 'Exportar', icon: 'ni ni-cloud-download-95 text-blue', path: '/exportar'}"/>
+        <sidebar-item :link="{name: 'Exportar', icon: 'ni ni-cloud-download-95 text-blue', path: '/ingreso'}"/>
       </template>
     </side-bar>
     <div class="main-content" :data="sidebarBackground">

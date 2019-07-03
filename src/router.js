@@ -47,14 +47,10 @@ export default new Router({
         },
         {
           path: '/profile',
-          name: 'profile',
+          name: 'perfil usuario',
           component: () => import(/* webpackChunkName: "demo" */ './views/UserProfile.vue')
         },
-        {
-          path: '/maps',
-          name: 'maps',
-          component: () => import(/* webpackChunkName: "demo" */ './views/Maps.vue')
-        },
+        
         {
           path: '/tables',
           name: 'tables',
@@ -74,65 +70,65 @@ export default new Router({
         ,
         {
           path: '/progresofim',
-          name: 'progresofim',
+          name: 'progreso fim',
           component: () => import(/* webpackChunkName: "demo" */ './views/ProgresoFim.vue')
         }
         ,
         {
           path: '/progresoactividades',
-          name: 'progresoactividades',
+          name: 'progreso por actividades',
           component: () => import(/* webpackChunkName: "demo" */ './views/ProgresoActividades.vue')
         }
         ,
         {
           path: '/paciente',
-          name: 'paciente',
+          name: 'elegir paciente',
           component: () => import(/* webpackChunkName: "demo" */ './views/Paciente.vue')
         }
         ,
         {
           path: '/historiaocupacional',
-          name: 'historiaocupacional',
+          name: 'historia ocupacional',
           component: () => import(/* webpackChunkName: "demo" */ './views/HistoriaOcupacional.vue')
         },
         {
           path: '/listadointereses',
-          name: 'listadointereses',
+          name: 'listado de intereses',
           component: () => import(/* webpackChunkName: "demo" */ './views/ListadoIntereses.vue')
         }
         ,
         {
           path: '/notasevolucion',
-          name: 'notasevolucion',
+          name: 'notas de volucion',
           component: () => import(/* webpackChunkName: "demo" */ './views/NotaEvolucion.vue')
         }
         ,
         {
           path: '/notafinalizacion',
-          name: 'notafinalizacion',
+          name: 'nota de finalizacion',
           component: () => import(/* webpackChunkName: "demo" */ './views/NotaFinalizacion.vue')
         },
         {
           path: '/estadisticas',
-          name: 'estadisticas',
+          name: 'estadisticas bascicas',
           component: () => import(/* webpackChunkName: "demo" */ './views/Estadisticas.vue')
         }
         ,
         {
           path: '/procedencia',
-          name: 'procedencia',
+          name: 'estadistica de procedencia',
           component: () => import(/* webpackChunkName: "demo" */ './views/Procedencia.vue')
         }
         ,
         {
           path: '/eficienciafim',
-          name: 'eficienciafim',
+          name: 'estadistica de eficiencia fim',
           component: () => import(/* webpackChunkName: "demo" */ './views/EficienciaFim.vue')
         }
         ,
         {
           path: '/ingreso',
-          name: 'ingreso',
+          name: 'estadistica de ingreso',
           component: () => import(/* webpackChunkName: "demo" */ './views/Ingreso.vue')
         },
         {

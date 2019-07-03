@@ -3,6 +3,12 @@
        
 
         <div class="container-fluid mt--7">
+            <div> 
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div>
             <div class="row">
                 <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
 
@@ -17,10 +23,7 @@
                             </div>
                         </div>
                         <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                            <div class="d-flex justify-content-between">
-                                <base-button size="sm" type="info" class="mr-4">Connect</base-button>
-                                <base-button size="sm" type="default" class="float-right">Message</base-button>
-                            </div>
+                            
                         </div>
                         <div class="card-body pt-0 pt-md-4">
                             <div class="row">

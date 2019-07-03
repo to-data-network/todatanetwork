@@ -2,8 +2,8 @@
   <div class="wrapper" :class="{ 'nav-open': $sidebar.showSidebar }">
     <side-bar
       :background-color="sidebarBackground"
-      short-title="Argon"
-      title="Argon"
+      short-title="To-data"
+      title="To-data"
     >
      
       <template slot="links">
@@ -43,6 +43,7 @@
             <sidebar-item :link="{name: 'Eficiencia FIM', icon: 'ni ni-controller text-info', path: '/notasevolucion'}"/>          
             <sidebar-item :link="{name: 'Ingreso', icon: 'ni ni-controller text-info', path: '/notafinalizacion'}"/>  
   </base-dropdown>
+        <sidebar-item :link="{name: 'Exportar', icon: 'ni ni-cloud-download-95 text-blue', path: '/exportar'}"/>
       </template>
     </side-bar>
     <div class="main-content" :data="sidebarBackground">
@@ -62,12 +63,8 @@
 
 
 <script>
-
   import DashboardNavbar from './DashboardNavbar.vue';  
   import { FadeTransition } from 'vue2-transitions';
-
-
-
   export default {
     components: {
       DashboardNavbar,
@@ -90,12 +87,12 @@
 </script>
 <style scoped>
   .btn-secondary {
-	  color: rgba(0, 0, 0, 0.5);
-   background-color: inherit;
+	color: rgba(0, 0, 0, 0.5);
+  background-color: inherit;
 	font-weight: inherit;
-	 box-shadow: 0 4px 6px rgba(255, 255, 255, 0.11), 0 1px 3px rgba(255, 255, 255, 0.08); 
-   text-align: inherit;
-   min-width: 2.25rem;
+	box-shadow: 0 4px 6px rgba(255, 255, 255, 0.11), 0 1px 3px rgba(255, 255, 255, 0.08); 
+  text-align: inherit;
+  min-width: 2.25rem;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(0, 0, 0, 0.5);

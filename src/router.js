@@ -65,6 +65,81 @@ export default new Router({
           name: 'agenda',
           component: () => import(/* webpackChunkName: "demo" */ './views/Agenda.vue')
         }
+        ,
+        {
+          path: '/resumen',
+          name: 'resumen',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Resumen.vue')
+        }
+        ,
+        {
+          path: '/progresofim',
+          name: 'progresofim',
+          component: () => import(/* webpackChunkName: "demo" */ './views/ProgresoFim.vue')
+        }
+        ,
+        {
+          path: '/progresoactividades',
+          name: 'progresoactividades',
+          component: () => import(/* webpackChunkName: "demo" */ './views/ProgresoActividades.vue')
+        }
+        ,
+        {
+          path: '/paciente',
+          name: 'paciente',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Paciente.vue')
+        }
+        ,
+        {
+          path: '/historiaocupacional',
+          name: 'historiaocupacional',
+          component: () => import(/* webpackChunkName: "demo" */ './views/HistoriaOcupacional.vue')
+        },
+        {
+          path: '/listadointereses',
+          name: 'listadointereses',
+          component: () => import(/* webpackChunkName: "demo" */ './views/ListadoIntereses.vue')
+        }
+        ,
+        {
+          path: '/notasevolucion',
+          name: 'notasevolucion',
+          component: () => import(/* webpackChunkName: "demo" */ './views/NotaEvolucion.vue')
+        }
+        ,
+        {
+          path: '/notafinalizacion',
+          name: 'notafinalizacion',
+          component: () => import(/* webpackChunkName: "demo" */ './views/NotaFinalizacion.vue')
+        },
+        {
+          path: '/estadisticas',
+          name: 'estadisticas',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Estadisticas.vue')
+        }
+        ,
+        {
+          path: '/procedencia',
+          name: 'procedencia',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Procedencia.vue')
+        }
+        ,
+        {
+          path: '/eficienciafim',
+          name: 'eficienciafim',
+          component: () => import(/* webpackChunkName: "demo" */ './views/EficienciaFim.vue')
+        }
+        ,
+        {
+          path: '/ingreso',
+          name: 'ingreso',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Ingreso.vue')
+        },
+        {
+          path: '/exportar',
+          name: 'exportar',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Exportar.vue')
+        }
       ]
     }
   ]

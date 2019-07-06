@@ -1,9 +1,4 @@
-//
-// Modal
-//
 
-
-// Fluid modal
 
 .modal-fluid {
     .modal-dialog {
@@ -16,7 +11,6 @@
 }
 
 
-// Background color variations
 
 @each $color, $value in $theme-colors {
     .modal-#{$color} {

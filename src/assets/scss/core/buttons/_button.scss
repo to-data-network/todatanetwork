@@ -1,8 +1,4 @@
-//
-// Icon buttons
-//
 
-// General styles
 
 .btn {
    position: relative;
@@ -22,7 +18,7 @@
    }
 
 
-   // Icons
+  
 
    i:not(:first-child),
    svg:not(:first-child) {
@@ -35,9 +31,6 @@
    }
 }
 
-
-// Remove translateY and margin animation when btn is included in a btn-group or input-group
-
 .btn-group,
 .input-group {
    .btn {
@@ -47,7 +40,7 @@
 }
 
 
-// Size variations
+
 
 .btn-sm {
    font-size: $input-btn-font-size-sm;
@@ -58,9 +51,6 @@
 }
 
 
-// Some quick fixes (to revise)
-
-// Fixes
 [class*="btn-outline-"] {
    border-width: 1px;
 }

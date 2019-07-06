@@ -35,7 +35,7 @@ export default {
       description: 'Table data'
     },
     type: {
-      type: String, // striped | hover
+      type: String, 
       default: '',
       description: 'Whether table is striped or hover type'
     },

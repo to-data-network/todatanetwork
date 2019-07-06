@@ -1,17 +1,17 @@
 <template>
     <div class="daut main-content bg-default">
-        <!-- Navbar -->
+        
         <base-nav class="navbar-top navbar-horizontal navbar-dark"
                   containerClasses="px-4 container"
                   expand>
             <router-link slot="brand" class="navbar-brand" to="/">
-            <!-- LOGOTIPO -->
-                 <!--  <img src="img/brand/white.png"/> -->
+            
+                 
                  <h2>Hun</h2>
             </router-link>
 
             <template v-slot="{closeMenu}">
-                <!-- Collapse header -->
+                
                 <div class="navbar-collapse-header d-md-none">
                     <div class="row">
                         <div class="col-6 collapse-brand">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Navbar items -->
+                
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         
@@ -51,7 +51,7 @@
                 </ul>
             </template>
         </base-nav>
-        <!-- Header -->
+        
         <div class="header bg-gradient py-7 py-lg-8">
             <div class="container">
                 <div class="header-body text-center mb-7">
@@ -70,7 +70,7 @@
                 </svg>
             </div>
         </div>
-        <!-- Page content -->
+        
         <div class="container mt--8 pb-5">
             <slide-y-up-transition mode="out-in" origin="center top">
                 <router-view></router-view>

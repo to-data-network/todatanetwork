@@ -1,7 +1,4 @@
-//
-// Floating
-// floating animation utility class
-//
+
 
 
 .floating {
@@ -14,7 +11,6 @@
 }
 
 
-// Size variations
 
 .floating-lg {
 	animation: floating-lg 3s ease infinite;
@@ -25,7 +21,7 @@
 }
 
 
-// Keyframes
+
 
 @keyframes floating-lg {
     0% {

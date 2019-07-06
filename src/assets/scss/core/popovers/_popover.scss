@@ -1,6 +1,3 @@
-//
-// Popover
-//
 
 
 .popover {
@@ -11,8 +8,6 @@
 	font-weight: $font-weight-bold;
 }
 
-
-// Alternative colors
 
 @each $color, $value in $theme-colors {
     .popover-#{$color} {

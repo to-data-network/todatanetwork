@@ -1,10 +1,7 @@
-//
-// Custom control
-// additional styles for custom checkboxes, radios and other
-//
+
 
 .custom-control-label {
-    // Background-color and (when enabled) gradient
+    
     &::before {
         border: $custom-control-indicator-border-width solid $custom-control-indicator-border-color;
         @if $enable-transitions {
@@ -23,11 +20,9 @@
 }
 
 
-// Alternative style
-
 .custom-control-alternative {
     .custom-control-label {
-        // Background-color and (when enabled) gradient
+        
         &::before {
             border: 0;
             box-shadow: $input-alternative-box-shadow;

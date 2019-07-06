@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                                 <hr class="my-4" />
-                                <!-- Address -->
+                                
                                 <h6 class="heading-small text-muted mb-4">Información de contacto</h6>
                                 <div class="pl-lg-4">
                                     <div class="row">
@@ -160,7 +160,7 @@
                                     </div>
                                 </div>
                                 <hr class="my-4" />
-                                <!-- Description -->
+                                
                                 <h6 class="heading-small text-muted mb-4">Algo</h6>
                                 <div class="pl-lg-4">
                                     <div class="form-group">

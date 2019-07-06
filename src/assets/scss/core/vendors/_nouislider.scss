@@ -1,9 +1,4 @@
-//
-// NoUi Slider
-//
 
-
-// Original styles
 
 .noUi-target,
 .noUi-target * {
@@ -29,7 +24,7 @@
 }
 
 
-// Wrapper for all connect elements
+
 
 .noUi-connects {
     overflow: hidden;
@@ -132,8 +127,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Disabled state;
- */
 
 [disabled] .noUi-connect {
     background: #B8B8B8;
@@ -146,9 +139,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Base;
- *
- */
 
 .noUi-pips,
 .noUi-pips * {
@@ -162,9 +152,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Values;
- *
- */
 
 .noUi-value {
     position: absolute;
@@ -178,9 +165,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Markings;
- *
- */
+
 
 .noUi-marker {
     position: absolute;
@@ -196,9 +181,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Horizontal layout;
- *
- */
+
 
 .noUi-pips-horizontal {
     padding: 10px 0;
@@ -231,9 +214,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Vertical layout;
- *
- */
 
 .noUi-pips-vertical {
     padding: 0 10px;
@@ -294,7 +274,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-//  Custom styles
+
 
 .noUi-target {
     background: $noui-target-bg;
@@ -349,8 +329,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-/* Disabled state */
-
 [disabled] .noUi-connect,
 [disabled].noUi-connect {
     background: $noui-slider-connect-disabled-bg;
@@ -360,8 +338,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 [disabled].noUi-origin {
     cursor: not-allowed;
 }
-
-/* Range slider value labels */
 
 .range-slider-value {
     font-size: $font-size-xs;

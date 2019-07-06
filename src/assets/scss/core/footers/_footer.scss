@@ -1,9 +1,4 @@
-//
-// Footer
-//
 
-
-// General styles
 
 .footer {
     background: $footer-bg;
@@ -46,7 +41,6 @@
 }
 
 
-// Dark footer
 
 .footer-dark {
     .col-footer .heading {
@@ -54,8 +48,6 @@
     }
 }
 
-
-// Footer nav used for copyright and some links, but not limited to this
 
 .nav-footer {
     .nav-link {
@@ -69,8 +61,6 @@
     }
 }
 
-
-// Footer with cards over
 
 .footer.has-cards {
     overflow: hidden;

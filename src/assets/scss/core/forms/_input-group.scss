@@ -1,6 +1,3 @@
-//
-// Input group
-//
 
 .input-group {
 	box-shadow: $input-box-shadow;
@@ -29,7 +26,6 @@
 }
 
 
-// Alternative input groups related to .form-control-alternative
 
 
 .input-group-alternative {
@@ -51,7 +47,6 @@
 }
 
 
-// .focus class is applied dinamycally from theme.js
 
 .focused {
 	.input-group {

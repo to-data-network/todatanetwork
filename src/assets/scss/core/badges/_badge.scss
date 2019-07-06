@@ -1,9 +1,4 @@
-//
-// Badge
-//
 
-
-// General styles
 
 .badge {
     text-transform: $badge-text-transfom;
@@ -14,7 +9,6 @@
 }
 
 
-// Size variations
 
 .badge-md {
     padding: .65em 1em;
@@ -25,7 +19,7 @@
 }
 
 
-// Multiple inline badges
+
 
 .badge-inline {
     margin-right: .625rem;
@@ -40,8 +34,6 @@
     }
 }
 
-
-// Badge spacing inside a btn with some text
 
 .btn {
     .badge {

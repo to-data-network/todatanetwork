@@ -1,9 +1,3 @@
-//
-// Forms
-//
-
-
-// Labels
 
 .form-control-label {
     color: $gray-700;
@@ -11,8 +5,6 @@
     font-weight: $font-weight-bold;
 }
 
-
-// Text inputs
 
 .form-control {
     font-size: $input-btn-font-size;
@@ -24,8 +16,6 @@
     }
 }
 
-
-// Textarea
 
 textarea[resize="none"] {
     resize: none!important;
@@ -44,10 +34,6 @@ textarea[resize="horizontal"] {
 }
 
 
-// Form input variations
-
-// Muted input
-
 .form-control-muted {
     background-color: $input-muted-bg;
     border-color: $input-muted-bg;
@@ -59,8 +45,6 @@ textarea[resize="horizontal"] {
 }
 
 
-// Alternative input
-
 .form-control-alternative {
     box-shadow: $input-alternative-box-shadow;
     border: 0;
@@ -70,8 +54,6 @@ textarea[resize="horizontal"] {
         box-shadow: $input-focus-alternative-box-shadow;
     }
 }
-
-// Size variations: Fixes to the bootstrap defaults
 
 .form-control-lg {
     font-size: $font-size-base;

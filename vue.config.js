@@ -4,7 +4,8 @@ const isProd = process.env.NODE_ENV === "production";
 module.exports = {
   publicPath: isProd ? "/hun/" : "",
   configureWebpack: {
-    // Set up all the aliases we use in our app.
+    
+
     plugins: [
       new webpack.optimize.LimitChunkCountPlugin({
         maxChunks: 6
@@ -19,7 +20,7 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: '#172b4d'
   },
   css: {
-    // Enable CSS source maps.
+    
     sourceMap: process.env.NODE_ENV !== 'production'
   }
 };

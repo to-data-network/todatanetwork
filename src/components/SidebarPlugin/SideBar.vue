@@ -2,7 +2,7 @@
     <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
         <div class="container-fluid">
 
-            <!--Toggler-->
+            
             <navbar-toggle-button @click.native="showSidebar">
                 <span class="navbar-toggler-icon"></span>
             </navbar-toggle-button>
@@ -22,16 +22,16 @@
                       <h1>a</h1>
                     </slot>
                 </ul>
-                <!--Divider-->
+                
                 <hr class="my-3">
-                <!--Heading-->
+                
                
             </div>
             </div>
     </nav>
 </template>
 <script>
-  import NavbarToggleButton from '@/components/NavbarToggleButton'
+  import NavbarToggleButton from '../NavbarToggleButton'
 
   export default {
     name: 'sidebar',

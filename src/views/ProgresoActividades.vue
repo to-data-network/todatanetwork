@@ -2,7 +2,7 @@
             <template>
     <div>
         <base-header type="gradient-success" class="pb-6 pb-8 pt-5 pt-md-8">
-            <!-- Card stats -->
+            
             <div class="row">
                 <div class="col-xl-3 col-lg-6">
                     <stats-card title="Total actividades"
@@ -47,7 +47,7 @@
             </div>
         </base-header>
 
-        <!--Charts-->
+        
         <div class="container-fluid mt--7">
             <div class="row">
                 <div class="col-xl-8 mb-5 mb-xl-0">
@@ -109,9 +109,7 @@
                     </card>
                 </div>
             </div>
-            <!-- End charts-->
-
-            <!--Tables-->
+           
             <div class="row mt-5">
                 <div class="col-xl-8 mb-5 mb-xl-0">
                     <page-visits-table></page-visits-table>
@@ -120,18 +118,18 @@
                     <social-traffic-table></social-traffic-table>
                 </div>
             </div>
-            <!--End tables-->
+            
         </div>
 
     </div>
 </template>
 <script>
-  // Charts
-  import * as chartConfigs from '@/components/Charts/config';
-  import LineChart from '@/components/Charts/LineChart';
-  import BarChart from '@/components/Charts/BarChart';
+  
+  import * as chartConfigs from '../components/Charts/config';
+  import LineChart from '../components/Charts/LineChart';
+  import BarChart from '../components/Charts/BarChart';
 
-  // Tables
+  
   import SocialTrafficTable from './Dashboard/SocialTrafficTable';
   import PageVisitsTable from './Dashboard/PageVisitsTable';
 

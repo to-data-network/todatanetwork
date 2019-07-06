@@ -1,9 +1,4 @@
-//
-// Table
-//
 
-
-// General styles
 
 .table {
     thead th {
@@ -34,8 +29,6 @@
     }
 
 
-    // Vetical align table content
-
     &.align-items-center {
         td,
         th {
@@ -44,8 +37,6 @@
     }
 
 
-   // Styles for dark table
-
    .thead-dark {
         th {
             background-color: $table-dark-head-bg;
@@ -53,8 +44,6 @@
         }
     }
 
-
-    // Styles for light table
 
     .thead-light {
         th {
@@ -65,16 +54,12 @@
 }
 
 
-// Add transition for hover state
-
 .table-hover {
     tr {
         @include transition($transition-base);
     }
 }
 
-
-// Flush tables
 
 .table-flush {
     td,
@@ -102,8 +87,6 @@
     }
 }
 
-
-// Tables inside cards
 
 .card {
     .table {

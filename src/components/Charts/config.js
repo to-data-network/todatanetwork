@@ -1,7 +1,7 @@
-import { parseOptions } from "@/components/Charts/optionHelpers";
+import { parseOptions } from "./optionHelpers";
 
 export const Charts = {
-  mode: 'light',//(themeMode) ? themeMode : 'light';
+  mode: 'light',
   fonts: {
     base: 'Open Sans'
   },
@@ -34,7 +34,7 @@ export const Charts = {
 
 function chartOptions(Chart) {
   let { colors, mode, fonts } = Charts;
-  // Options
+  
   let options = {
     defaults: {
       global: {
@@ -103,7 +103,7 @@ function chartOptions(Chart) {
     }
   };
 
-  // yAxes
+  
   Chart.scaleService.updateScaleDefaults('linear', {
     gridLines: {
       borderDash: [2],
@@ -128,7 +128,7 @@ function chartOptions(Chart) {
     }
   });
 
-  // xAxes
+  
   Chart.scaleService.updateScaleDefaults('category', {
     gridLines: {
       drawBorder: false,

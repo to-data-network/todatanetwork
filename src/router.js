@@ -6,8 +6,7 @@ Vue.use(Router)
 
 export default new Router({
   linkExactActiveClass: 'active',
-  /* mode: 'history'
-  base: process.env.BASE_URL, */
+  
   routes: [
     {
       path: '/',
@@ -23,6 +22,11 @@ export default new Router({
           path: '/register',
           name: 'register',
           component: () => import(/* webpackChunkName: "demo" */ './views/Register.vue')
+        },
+        {
+          path: '/politicadatos',
+          name: 'politica de datos',
+          component: () => import(/* webpackChunkName: "demo" */ './views/PoliticaDatos.vue')
         }
       ]
     },
@@ -32,13 +36,11 @@ export default new Router({
       component: DashboardLayout,
       children: [
         {
-          path: '/dashboard',
-          name: 'dashboard',
-          // route level code-splitting
-          // this generates a separate chunk (about.[hash].js) for this route
-          // which is lazy-loaded when the route is visited.
-          component: () => import(/* webpackChunkName: "demo" */ './views/Dashboard.vue')
-        },
+          path: '/agenda',
+          name: 'agenda',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Agenda.vue')
+        }
+        ,
         {
           path: '/icons',
           name: 'icons',
@@ -56,11 +58,10 @@ export default new Router({
           component: () => import(/* webpackChunkName: "demo" */ './views/Tables.vue')
         },
         {
-          path: '/agenda',
-          name: 'agenda',
-          component: () => import(/* webpackChunkName: "demo" */ './views/Agenda.vue')
-        }
-        ,
+          path: '/agregar',
+          name: 'agregar paciente',
+          component: () => import(/* webpackChunkName: "demo" */ './views/AgregarPaciente.vue')
+        },
         {
           path: '/resumen',
           name: 'resumen',
@@ -80,9 +81,9 @@ export default new Router({
         }
         ,
         {
-          path: '/paciente',
-          name: 'elegir paciente',
-          component: () => import(/* webpackChunkName: "demo" */ './views/Paciente.vue')
+          path: '/usuario',
+          name: 'elegir usuario',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Usuario.vue')
         }
         ,
         {

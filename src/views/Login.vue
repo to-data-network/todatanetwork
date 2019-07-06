@@ -26,7 +26,7 @@
                             </base-checkbox>
                             
                             <div class="text-center">
-                                <router-link class="nav-link nav-link-icon" to="/dashboard">                            
+                                <router-link class="nav-link nav-link-icon" to="/agenda">                            
                             <base-button type="primary" class="my-4">Iniciar sesión</base-button>
                         </router-link>
                                 

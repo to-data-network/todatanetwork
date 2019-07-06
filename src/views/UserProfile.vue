@@ -70,11 +70,9 @@
                         <div slot="header" class="bg-white border-0">
                             <div class="row align-items-center">
                                 <div class="col-8">
-                                    <h3 class="mb-0">My account</h3>
+                                    <h3 class="mb-0">Usuario</h3>
                                 </div>
-                                <div class="col-4 text-right">
-                                    <a href="#!" class="btn btn-sm btn-primary">Settings</a>
-                                </div>
+                                
                             </div>
                         </div>
                         <template>
@@ -102,8 +100,8 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <base-input alternative=""
-                                                        label="nobmres"
-                                                        placeholder="Nombre1 Nombre2"
+                                                        label="nombres"
+                                                        placeholder="Nombre/s"
                                                         input-classes="form-control-alternative"
                                                         v-model="model.firstName"
                                             />
@@ -111,16 +109,165 @@
                                         <div class="col-lg-6">
                                             <base-input alternative=""
                                                         label="Apellidos"
-                                                        placeholder="Apellidos"
+                                                        placeholder="Apellido/s"
                                                         input-classes="form-control-alternative"
                                                         v-model="model.lastName"
                                             />
                                         </div>
+                                        <div class="col-lg-4">
+                                            <base-input alternative=""
+                                                        label="EPS"
+                                                        placeholder="EPS"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.esp"
+                                            />
+                                        </div>
+                                         <div class="col-lg-2">
+                                            <base-input alternative=""
+                                                        label="Genero"
+                                                        placeholder="Genero"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.genero"
+                                            />
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <base-input alternative=""
+                                                        label="Edad"
+                                                        placeholder="Edad"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.edad"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <base-input alternative=""
+                                                        label="Ocupación"
+                                                        placeholder="Ocupación"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.ocupacion"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                 <h6 class="heading-small text-muted mb-4">Información de contacto</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <base-input alternative=""
+                                                        label="Dirección"
+                                                        placeholder="Sitio de residencia"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.address"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <base-input alternative=""
+                                                        label="Ciudad"
+                                                        placeholder="Ciudad"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.city"
+                                            />
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <base-input alternative=""
+                                                        label="Pais"
+                                                        placeholder="Pais"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.country"
+                                            />
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <base-input alternative=""
+                                                        label="Codigo postal"
+                                                        placeholder="Codigo postal"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.zipCode"
+                                            />
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <base-input alternative=""
+                                                        label="Telefono"
+                                                        placeholder="Telefono"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.telefono"
+                                            />
+                                        </div>
+                                    
                                     </div>
                                 </div>
                                 <hr class="my-4" />
-                                
-                                <h6 class="heading-small text-muted mb-4">Información de contacto</h6>
+                               
+                            </form>
+                        </template>
+                        
+                        <template>
+                            <form @submit.prevent>
+                                <h6 class="heading-small text-muted mb-4">Información familiar</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <base-input alternative=""
+                                                        label="Cedula"
+                                                        placeholder="Cedula"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.cedula"
+                                            />
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <base-input alternative=""
+                                                        label="Email "
+                                                        placeholder="ejemplo@example.com"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.email"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <base-input alternative=""
+                                                        label="nombres"
+                                                        placeholder="Nombre/s"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.firstName"
+                                            />
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <base-input alternative=""
+                                                        label="Apellidos"
+                                                        placeholder="Apellido/s"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.lastName"
+                                            />
+                                        </div>
+                                        
+                                         <div class="col-lg-2">
+                                            <base-input alternative=""
+                                                        label="Genero"
+                                                        placeholder="Genero"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.genero"
+                                            />
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <base-input alternative=""
+                                                        label="Edad"
+                                                        placeholder="Edad"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.edad"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <base-input alternative=""
+                                                        label="Parentesco"
+                                                        placeholder="Parentesco"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.parentesco"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                 <h6 class="heading-small text-muted mb-4">Información de contacto familiar</h6>
                                 <div class="pl-lg-4">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -149,27 +296,28 @@
                                                         v-model="model.country"
                                             />
                                         </div>
+                                       
                                         <div class="col-lg-4">
                                             <base-input alternative=""
-                                                        label="Codigo postal"
-                                                        placeholder="Codigo postal"
+                                                        label="Telefono"
+                                                        placeholder="Telefono"
                                                         input-classes="form-control-alternative"
-                                                        v-model="model.zipCode"
+                                                        v-model="model.telefono"
+                                            />
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <base-input alternative=""
+                                                        label="Email"
+                                                        placeholder="Email"
+                                                        input-classes="form-control-alternative"
+                                                        v-model="model.email"
                                             />
                                         </div>
                                     </div>
                                 </div>
                                 <hr class="my-4" />
                                 
-                                <h6 class="heading-small text-muted mb-4">Algo</h6>
-                                <div class="pl-lg-4">
-                                    <div class="form-group">
-                                        <base-input alternative=""
-                                                    label="About Me">
-                                            <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Escribe algo.</textarea>
-                                        </base-input>
-                                    </div>
-                                </div>
+                               
                             </form>
                         </template>
                     </card>

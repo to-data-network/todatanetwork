@@ -7,7 +7,7 @@
                 <span class="navbar-toggler-icon"></span>
             </navbar-toggle-button>
             <router-link class="navbar-brand" to="/">
-                 <base-button outline  size="lg"  type="secondary"> HUN </base-button>
+                 <img src="../../assets/todatanetworklogo.png" class="logo" >
             </router-link>
 
             
@@ -70,3 +70,11 @@
     }
   };
 </script>
+
+<style scoped>
+.navbar-vertical .navbar-brand-img, .navbar-vertical .navbar-brand > img {
+	max-width: 100%;
+  max-height: 100%; 
+}
+</style>
+

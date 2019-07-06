@@ -4,10 +4,11 @@
         <base-nav class="navbar-top navbar-horizontal navbar-dark"
                   containerClasses="px-4 container"
                   expand>
+                  
             <router-link slot="brand" class="navbar-brand" to="/">
             
-                 
-                 <h2>Hun</h2>
+                <img src="../assets/todatanetworklogo.png" class="logo" >
+                            
             </router-link>
 
             <template v-slot="{closeMenu}">
@@ -16,7 +17,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <router-link to="/">
-                                <img src="img/brand/green.png">
+                                <img src="../assets/todatanetworklogo.png" width="96" height="96">
                             </router-link>
                         </div>
                         <div class="col-6 collapse-close">
@@ -54,7 +55,7 @@
         
         <div class="header bg-gradient py-7 py-lg-8">
             <div class="container">
-                <div class="header-body text-center mb-7">
+                <div class="header-body text-center mb-3">
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-6">
                             <h1 class="text-white">¡Te damos la bienvenida!</h1>
@@ -125,6 +126,13 @@
 </script>
 <style scoped>
 
+#logo{
+    width:  100rem !important;
+    height: 5rem;
+}
+.navbar-horizontal .navbar-brand img {
+	height: 100px !important;
+}
 .bg-gradient {
 	background: linear-gradient(87deg, #2dc9ce 0, #2dcecc 100%) !important;
 }

@@ -14,17 +14,18 @@
             path: '/agenda'
           }"
         />
-        <base-dropdown>
-        
+        <sidebar-item :link="{name: 'Agregar usuario', icon: 'ni ni-fat-add text-blue', path: '/agregar'}"/>
+        <sidebar-item :link="{name: 'Elegir usuario', icon: 'ni ni-active-40 text-blue', path: '/usuario'}"/>
+        <base-dropdown>        
     <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni-zoom-split-in text-blue" :link="{ path: '/resumen'}" >
-                Resumen Paciente
+                Resumen Usuario
     </base-button>     
-            <sidebar-item :link="{name: 'Resumen paciente', icon: 'ni ni-zoom-split-in text-info', path: '/profile'}"/>
+            <sidebar-item :link="{name: 'Resumen usuario', icon: 'ni ni-zoom-split-in text-info', path: '/profile'}"/>
             <sidebar-item :link="{name: 'Progreso FIM', icon: 'ni ni-controller text-info', path: '/progresofim'}"/>
             <sidebar-item :link="{name: 'Progreso por actividades', icon: 'ni ni-html5 text-info', path: '/progresoactividades'}"/>          
   </base-dropdown>
         
-        <sidebar-item :link="{name: 'Elegir paciente', icon: 'ni ni-single-02 text-blue', path: '/paciente'}"/>
+        
         <base-dropdown>
          <base-button slot="title" block type="secondary" class="dropdown-toggle" icon= "ni ni ni-single-copy-04 text-blue" :link="{ path: '/profile'}" >
                 Notas      
@@ -97,4 +98,5 @@
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(0, 0, 0, 0.5);
 }
+.dropdown-menu{ width:100%;}
 </style>

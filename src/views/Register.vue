@@ -10,28 +10,47 @@
                     <form role="form">
 
                         <base-input class="input-group-alternative mb-3"
-                                    placeholder="Nombre"
-                                    addon-left-icon="ni ni-hat-3"
+                                    placeholder="Nombres"
+                                    addon-left-icon="ni ni-single-02"
+                                    v-model="model.name">
+                        </base-input>
+                        <base-input class="input-group-alternative mb-3"
+                                    placeholder="Apellidos"
+                                    addon-left-icon="ni ni-circle-08 text-blue"
                                     v-model="model.name">
                         </base-input>
                         <base-input class="input-group-alternative mb-3"
                                         placeholder="Cedula"
-                                        addon-left-icon="ni ni-badge"
+                                        addon-left-icon="ni ni-badge text-blue"
+                                        v-model="model.cedula">
+                            </base-input>
+                            <base-input class="input-group-alternative mb-3"
+                                        placeholder="Telefono"
+                                        addon-left-icon="ni ni-mobile-button"
                                         v-model="model.cedula">
                             </base-input>
                         <base-input class="input-group-alternative mb-3"
                                     placeholder="Email"
+                                    addon-left-icon="ni ni-email-83 text-blue"
+                                    v-model="model.email">
+                        </base-input>
+                        <base-input class="input-group-alternative mb-3"
+                                    placeholder="Confirmar Email"
                                     addon-left-icon="ni ni-email-83"
                                     v-model="model.email">
                         </base-input>
-
                         <base-input class="input-group-alternative"
                                     placeholder="Contrasena"
+                                    type="password"
+                                    addon-left-icon="ni ni-lock-circle-open text-blue"
+                                    v-model="model.password">
+                        </base-input>
+                        <base-input class="input-group-alternative"
+                                    placeholder="Confirmar contrasena"
                                     type="password"
                                     addon-left-icon="ni ni-lock-circle-open"
                                     v-model="model.password">
                         </base-input>
-
                         <div class="text-muted font-italic">
                             <small>password strength: <span class="text-success font-weight-700">strong</span></small>
                         </div>
@@ -39,7 +58,7 @@
                         <div class="row my-4">
                             <div class="col-12">
                                 <base-checkbox class="custom-control-alternative">
-                                    <span class="text-muted">Acepto la <a href="#!">Política de Privacidad</a></span>
+                                    <span class="text-muted">Acepto la <a href="/politicadatos">Política de Privacidad</a></span>
                                 </base-checkbox>
                             </div>
                         </div>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-const DefaultContainer = () => import('../containers/DefaultContainer')
+
 
 
 const Dashboard = () => import('../views/Dashboard')

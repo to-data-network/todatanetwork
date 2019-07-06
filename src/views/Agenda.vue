@@ -6,9 +6,11 @@
       <h1>-</h1>
       <div >
       <full-calendar class="agenda" :events="events" />
+     
     </div>
-           
+        
     </div>
+    
     </template>
 
     <script>
@@ -52,5 +54,8 @@
     }
     .event-item {
       padding: 2px 0 2px 4px !important;
+    }
+    #agregar{
+      background-color: beige !important;
     }
     </style>
